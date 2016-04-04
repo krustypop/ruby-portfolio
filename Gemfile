@@ -30,6 +30,9 @@ gem 'bcrypt', '~> 3.1.7'
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 
+# handle pagination
+gem 'kaminari'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
