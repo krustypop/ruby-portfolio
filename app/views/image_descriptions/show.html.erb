@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @image_description.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @image_description.description %>
+</p>
+
+<p>
+  <strong>Width:</strong>
+  <%= @image_description.width %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @image_description.height %>
+</p>
+
+<%= link_to 'Edit', edit_image_description_path(@image_description) %> |
+<%= link_to 'Back', image_descriptions_path %>

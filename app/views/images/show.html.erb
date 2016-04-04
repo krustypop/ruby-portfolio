@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @image.url %>
+</p>
+
+<p>
+  <strong>Date creation:</strong>
+  <%= @image.date_creation %>
+</p>
+
+<p>
+  <strong>Visible:</strong>
+  <%= @image.visible %>
+</p>
+
+<p>
+  <strong>Deleted:</strong>
+  <%= @image.deleted %>
+</p>
+
+<p>
+  <strong>Date deleted:</strong>
+  <%= @image.date_deleted %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @image.category_id %>
+</p>
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>

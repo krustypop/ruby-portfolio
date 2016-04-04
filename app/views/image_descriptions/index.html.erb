@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Image Descriptions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Width</th>
+      <th>Height</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @image_descriptions.each do |image_description| %>
+      <tr>
+        <td><%= image_description.title %></td>
+        <td><%= image_description.description %></td>
+        <td><%= image_description.width %></td>
+        <td><%= image_description.height %></td>
+        <td><%= link_to 'Show', image_description %></td>
+        <td><%= link_to 'Edit', edit_image_description_path(image_description) %></td>
+        <td><%= link_to 'Destroy', image_description, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Image description', new_image_description_path %>
